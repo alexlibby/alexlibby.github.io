@@ -1,7 +1,61 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+  <head>
+    <title>Documentation: hexo-tag-webp Plugin</title>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=js&amp;skin=sons-of-obsidian"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <ul>
+       <li><a href="https://github.com/alexlibby/hexo-tag-webp">Github Site</a></li>
+       <li><a href="https://github.com/alexlibby/hexo-tag-webp/issues">Report an issue</a></li>
+      </ul>
+    </nav>
+    <div id="main">
+      <section>
+        <article>
+          <h1>hexo-tag-webp</h1><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/1f0a5f5f2d624d2bef939611ad60a52dd8723c34/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f76657273696f6e2d312e302e302d626c7565"><img src="https://camo.githubusercontent.com/1f0a5f5f2d624d2bef939611ad60a52dd8723c34/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f76657273696f6e2d312e302e302d626c7565" alt="version" data-canonical-src="https://img.shields.io/badge/version-1.0.0-blue" style="max-width:100%;"></a>
+          <p>A <a href="https://hexo.io">Hexo</a> tag plugin to generate WebP format images from PNG files</p>
+
+          <h2>Install</h2>
+          <p>To install the <code>hexo-tag-web</code> plugin, run this command from within a Node.js terminal session - your current working directory must be that of your blog:</p>
+          <code class="prettyprint">
+            $ npm install hexo-tag-webp --save
+          </code>
+          <p>This will install <code>hexo-tag-webp</code> and its dependencies into your blog.</p>
+
+          <h2>Options</h2>
+          <p>You can configure this plugin in <code>_config.yml</code>:</p>
+
+          <code class="prettyprint source lang-yaml">
+            webpconfig:
+              quality: 90
+              height: 260
+              width: 0
+          </code>
+
+          <ul>
+          	<li>quality - Sets the quality of the image from 0 to 100</li>
+            <li>height - Specify the height of the new WebP image</li>
+            <li>width - Specify the width of the new WebP image</li>
+          </ul>
+          <p>Specifying 0 for height or width will scale the image's height or width automatically, based on whether a non-zero value has been set for height or width.</p>
+
+          <b>Note:</b>
+          <span>The plugin assumes you have <code>asset_folder: true</code> set in your <code>_config.yml</code> file - make sure you set this!</span>
+
+          <h2>To do:</h2>
+          <ul>
+            <li>Remove reliance on setting asset_folder: true - make it optional</li>
+            <li>Add in more options from imagemin plugin</li>
+            <li>Add in support for PNG images</li>
+            <li>...</li>
+          </ul>
+          <span>If you would like to contribute, please feel free to submit a pull request!</span>
+        </article>
+      </section>
+    </div>
+  </body>
 </html>
